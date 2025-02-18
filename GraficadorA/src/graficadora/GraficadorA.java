@@ -9,13 +9,13 @@ package graficadora;
  * @author carlos
  */
 public class GraficadorA {
-
+     
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         Ventana ventanita = new Ventana();
-        ventanita.setVisible(true);
+        ventanita.setVisible(true);        
         
     }
     
