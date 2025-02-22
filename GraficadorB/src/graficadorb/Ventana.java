@@ -6,7 +6,6 @@ package graficadorb;
 
 import java.awt.Color;
 import java.awt.Graphics;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -81,29 +80,9 @@ public class Ventana extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Graphics panel = jPanel1.getGraphics();
+         Graphics panel = jPanel1.getGraphics();
         panel.setColor(Color.red);
-        
-        try{
-           
-            String punto1 = JOptionPane.showInputDialog(this,"Ingrese el primer punto:");
-            String punto2 = JOptionPane.showInputDialog(this,"Ingrese el segundo punto:");
-
-            String[] p1 = punto1.split(",");
-            String[] p2 = punto2.split(",");
-
-            int p1x = Integer.parseInt(p1[0]);
-            int p1y = Integer.parseInt(p1[1]);
-
-            int p2x = Integer.parseInt(p2[0]);
-            int p2y = Integer.parseInt(p2[1]);
-
-            panel.drawLine(p1x, p1y, p2x, p2y);
-        }
-        catch(Exception e){
-            JOptionPane.showMessageDialog(this, "Ingrese informacion correcta.");
-        }
-        
+        panel.drawLine(1, 3, 100, 150);
     }//GEN-LAST:event_jButton1ActionPerformed
 
    
