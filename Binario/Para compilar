@@ -1,0 +1,20 @@
+1. Instalar Jflex y CUP:
+sudo apt-get update
+sudo apt-get install jflex cup
+
+2. Descargar libreria de CUP:
+http://www2.cs.tum.edu/projects/cup/
+
+3. Agregar la liberia de CUP a su proyecto en java.
+
+4. Crear archivo lexico.jflex
+
+5. Crear archivo sintanctico.cup
+
+6. En una terminal ubicarse con el comando cd, en la carpeta que contiene los archivos lexico.jflex y sintanctico.cup
+
+7. Ejecutar el siguiente comando en la terminal:
+jflex lexico.jflex
+
+8. Ejecutar el siguiente comando en la terminal:
+cup -parser AnalisisSintactico -symbols Simbolo sintactico.cup
