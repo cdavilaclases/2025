@@ -1,0 +1,28 @@
+package binario;
+
+import java_cup.runtime.Symbol;
+
+parser code
+{:
+
+:}
+
+action code {:
+    //AQUI VA CODIGO EN JAVA
+:}
+
+terminal String cero, uno;
+non terminal Integer I,L,S;
+
+start with I;
+
+I ::= S:s {: 
+            System.out.println(s); 
+          :}
+     | {: System.out.println("No hay valor"); :};
+
+S ::= S:s L:l {: RESULT = 2*s + l; :}
+     |L:l {: RESULT = l; :};
+
+L ::= cero:c {: RESULT = Integer.parseInt(c); :}
+     |uno:u {: RESULT = Integer.parseInt(u); :};
