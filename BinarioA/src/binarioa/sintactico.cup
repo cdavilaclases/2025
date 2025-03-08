@@ -1,0 +1,27 @@
+package binarioa;
+
+import java_cup.runtime.Symbol;
+
+parser code
+{:
+
+:}
+
+action code {:
+    //AQUI VA CODIGO EN JAVA
+:}
+
+terminal String cero,uno;
+non terminal Integer I,S,B;
+
+start with I;
+
+I ::= S:s {: System.out.println(s); :}
+     | {: System.out.println("epsilon"); :};
+
+S ::= S:s B:b {: RESULT = 2*s + b; :}
+     | B:b {: RESULT = b; :};
+
+B ::= cero:c {: RESULT = Integer.parseInt(c); :} 
+     |uno:u {: RESULT = Integer.parseInt(u); :}
+     ;
