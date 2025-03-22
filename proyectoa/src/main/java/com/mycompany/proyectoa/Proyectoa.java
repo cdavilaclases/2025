@@ -17,6 +17,13 @@ public class Proyectoa {
     
     public static void main(String[] args) {
      
+        Usuario admin = new Usuario();
+        admin.nombre = "admin";
+        admin.password = "admin";
+        admin.rol = "A";
+        admin.usuario = "admin";
+        usuarios.add(admin);
+        
         Login l = new Login();
         l.setVisible(true);
         
