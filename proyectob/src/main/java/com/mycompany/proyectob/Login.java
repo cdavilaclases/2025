@@ -39,11 +39,11 @@ public class Login extends javax.swing.JFrame {
 
         jLabel1.setText("Usuario:");
 
-        jTextField1.setText("jTextField1");
+        jTextField1.setText("admin");
 
         jLabel2.setText("Password:");
 
-        jTextField2.setText("jTextField2");
+        jTextField2.setText("admin");
 
         jButton1.setText("Ingresar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -115,9 +115,9 @@ public class Login extends javax.swing.JFrame {
         boolean existe = false;
         
         for(Usuario u : Proyectob.usuarios){
-            if(u.usuario.equals(usuario) && u.password.equals(password)){
+            if(u.getUsuario().equals(usuario) && u.getPassword().equals(password)){
                 existe = true;
-                if(u.rol == 1){
+                if(u.getRol() == 1){
                    VentanaAdministrador v = new VentanaAdministrador();
                    v.setVisible(true);
                 }

@@ -16,6 +16,14 @@ public class Proyectob {
 
     public static void main(String[] args) {
         
+        Usuario u = new Usuario();
+        u.setNombre("admin");
+        u.setPassword("admin");
+        u.setUsuario("admin");
+        u.setRol(1);
+        
+        usuarios.add(u);
+        
         Login v = new Login();
         v.setVisible(true);
         

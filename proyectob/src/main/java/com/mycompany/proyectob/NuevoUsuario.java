@@ -148,17 +148,17 @@ public class NuevoUsuario extends javax.swing.JFrame {
         // TODO add your handling code here:
         
         Usuario u = new Usuario();
-        u.nombre = jTextField2.getText();
-        u.usuario = jTextField1.getText();
-        u.password = jTextField3.getText();
+        u.setNombre(jTextField2.getText());
+        u.setUsuario(jTextField1.getText());
+        u.setPassword(jTextField3.getText());
         
         String rol = jComboBox1.getSelectedItem().toString();
         
         if(rol.equals("Administrador")){
-            u.rol = 1;
+            u.setRol(1);
         }
         else{
-            u.rol = 2;
+            u.setRol(2);
         }
         
         
