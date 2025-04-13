@@ -4,6 +4,8 @@
  */
 package com.mycompany.proyectob;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author carlos
@@ -14,6 +16,8 @@ public class Usuario {
     private String nombre;
     private int rol;
     private String password;
+    
+    public ArrayList<Telefono> telefonos = new ArrayList<>();
 
     /**
      * @return the usuario
