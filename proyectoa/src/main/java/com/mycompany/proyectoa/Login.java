@@ -126,7 +126,7 @@ public class Login extends javax.swing.JFrame {
                     v.setVisible(true);
                 }
                 else{
-                    VentanaVendedor v = new VentanaVendedor();
+                    VentanaVendedor v = new VentanaVendedor(u);
                     v.setVisible(true);
                 }
             }

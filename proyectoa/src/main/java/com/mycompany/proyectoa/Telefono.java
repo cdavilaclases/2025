@@ -4,18 +4,13 @@
  */
 package com.mycompany.proyectoa;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author carlos
  */
-public class Usuario {
+public class Telefono {
     
-    public String nombre;
-    public String password;
-    public String rol;
-    public String usuario;
-    public ArrayList<Telefono> telefonos = new ArrayList<>();
+    public String codigo;
+    public String numero;
     
 }
