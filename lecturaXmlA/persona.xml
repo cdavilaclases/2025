@@ -1,0 +1,12 @@
+<personas>
+    <persona>
+        <nombre>Test</nombre>
+        <apellido>Ape</apellido>
+        <edad>47</edad>
+    </persona>
+    <persona>
+        <nombre>Test2</nombre>
+        <apellido>Ape2</apellido>
+        <edad>27</edad>
+    </persona>
+</personas>
