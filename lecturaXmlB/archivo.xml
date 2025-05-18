@@ -1,0 +1,10 @@
+<estudiantes>
+    <estudiante>
+        <nombre>test</nombre>
+        <carnet>1232</carnet>        
+    </estudiante>
+    <estudiante>
+        <nombre>test2</nombre>
+        <carnet>36324</carnet>        
+    </estudiante>
+</estudiantes>
