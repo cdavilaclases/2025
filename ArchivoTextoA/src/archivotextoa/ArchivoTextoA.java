@@ -25,13 +25,13 @@ public class ArchivoTextoA {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        escribir("rutaRelativaX.csv","""
+        escribir("rutaRelativaX3.csv","""
                                     214213-2,Jhon sssSmit, Ciudad, 45
                                     25323-K, Mary Smith, San Jose, 34
                                     """);
         //escribir("/home/carlos/Desktop/rutaAbsoluta.txt","Hola\nmundo");
         
-        ArrayList<Cliente> clientes = leer("rutaRelativaX.csv");
+        ArrayList<Cliente> clientes = leer("rutaRelativaX3.csv");
         clientes.forEach((c)->{
             System.out.print(c.nombre);
             System.out.print(",");
