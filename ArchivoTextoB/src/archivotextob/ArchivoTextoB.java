@@ -27,7 +27,7 @@ public class ArchivoTextoB {
         // TODO code application logic here
         
         escribir("rutaRelativa.csv","""
-                                    Jhon Smith, 21312, ciudad, 80991-9
+                                    Jhon Smith, 123, ciudad, 80991-9
                                     Mary Smith, 2432, San Jose, 151324123-k
                                     """);
         //escribir("/home/carlos/Desktop/rutaAbsoluta.csv","hola mundo");
