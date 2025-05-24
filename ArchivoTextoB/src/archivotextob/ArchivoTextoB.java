@@ -28,7 +28,7 @@ public class ArchivoTextoB {
         
         escribir("rutaRelativa.csv","""
                                     Jhon Smith, 123, ciudad, 80991-9
-                                    Mary Smith, 2432, San Jose, 151324123-k
+                                    Mary Smith, 24352, San Jose, 151324123-k
                                     """);
         //escribir("/home/carlos/Desktop/rutaAbsoluta.csv","hola mundo");
         
