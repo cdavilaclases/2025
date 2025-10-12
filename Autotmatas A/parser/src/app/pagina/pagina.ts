@@ -1,5 +1,5 @@
 import { Component,ElementRef, ViewChild } from '@angular/core';
-import { ParserServicio } from '../parser-servicio';
+import { ParserServicio } from './Parser/parser-servicio';
 import * as d3 from 'd3';
 import 'd3-graphviz';
 

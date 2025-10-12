@@ -6,11 +6,13 @@ import { App } from './app';
 import { Pagina } from './pagina/pagina';
 
 import { FormsModule } from '@angular/forms';
+import { Ejemplo2 } from './ejemplo2/ejemplo2';
 
 @NgModule({
   declarations: [
     App,
-    Pagina
+    Pagina,
+    Ejemplo2
   ],
   imports: [
     BrowserModule,
