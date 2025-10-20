@@ -1,0 +1,14 @@
+<h1>Ingrese una cadena a?(b|c)+d*</h1>
+<input type="text" [(ngModel)]="texto">
+<button (click)="compilar()">Verificar binario</button>
+
+@if(valida){
+<p>
+    La cadena es valida
+</p>
+} 
+@else{
+<p>
+    La cadena es invalida
+</p>
+}

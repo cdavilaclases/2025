@@ -1,0 +1,13 @@
+<h1>Ingrese una expresión (a+(b|c)*d?e+)*:</h1>
+<input type="text" [(ngModel)]="texto">
+<button (click)="parsear()">Comprobar cadena</button>
+@if (valida) {
+    <p>
+    Cadena valida
+</p>
+}
+@else {
+    <p>
+    Cadena invalida
+</p>
+}
