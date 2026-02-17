@@ -1,0 +1,37 @@
+package operacionesbasicasb;
+
+import java_cup.runtime.Symbol;
+
+parser code
+{:
+    Integer valor = 0;
+
+:}
+
+action code {:
+    //AQUI VA CODIGO EN JAVA
+:}
+
+terminal String num, para,parc, mas, menos, por;
+non terminal Integer I,E,T,F;
+
+start with I;
+
+I ::= E:e {:
+    parser.valor = e;
+:}
+
+    | {: parser.valor = 0;:};
+
+E ::= E:e mas T:t {: RESULT=e + t; :}
+    |E:e menos T:t {: RESULT = e - t; :}
+    |T:t {: RESULT = t; :};
+
+T ::= T:t por F:f {: RESULT = t * f; :}
+    |F:f {: RESULT = f; :};
+
+F ::= num:n {: RESULT = Integer.parseInt(n); :}
+    |para E:e parc {: RESULT = e; :};
+
+
+
