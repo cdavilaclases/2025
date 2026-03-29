@@ -99,16 +99,16 @@ public class Login extends javax.swing.JFrame {
         String usuario = jTextField1.getText();
         String password = jPasswordField1.getText();
         
-        Usuario u = null;
+        ProyectoA2026.usuarioLogin = null;
         
         for(Usuario i : ProyectoA2026.usuarios){
             if(usuario.equals(i.nombre) && password.equals(i.password)){
-                u = i;
+                ProyectoA2026.usuarioLogin = i;
                 break;
             }
         }
         
-        if(u !=null){
+        if(ProyectoA2026.usuarioLogin !=null){
             BienvenidaUsuario v = new BienvenidaUsuario();
             v.setVisible(true);
         }
