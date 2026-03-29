@@ -20,6 +20,7 @@ public class ProyectoB2026 {
         Usuario u = new Usuario();
         u.usuario = "admin";
         u.password = "admin";
+        u.rol = "Administrador";
         
         usuarios.add(u);
         
