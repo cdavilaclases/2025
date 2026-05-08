@@ -14,6 +14,7 @@ public class ProyectoA2026 {
 
     public static ArrayList<Usuario> usuarios = new ArrayList<>();
     public static Usuario usuarioLogin;
+    public static ArrayList<Consultorio> consultorios = new ArrayList<>();
     
     public static void main(String[] args) {
         Usuario u = new Usuario();

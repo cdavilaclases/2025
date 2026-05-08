@@ -4,6 +4,7 @@
  */
 package com.mycompany.proyectoa2026;
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -20,6 +21,17 @@ public class ConsultaUsuarios extends javax.swing.JFrame {
     public ConsultaUsuarios() {
         initComponents();
         
+        jComboBox1.removeAllItems();
+        
+        ArrayList<String> lista = new ArrayList<>();
+        lista.add("Administrador");
+        lista.add("Doctor");
+        lista.add("Secretaria");
+        
+        for(String l: lista){
+            jComboBox1.addItem(l);
+        }
+        
         llenarTabla();
         
     }
@@ -28,10 +40,22 @@ public class ConsultaUsuarios extends javax.swing.JFrame {
         String[] columnas = {"Usuario", "Password", "Rol"};
         DefaultTableModel modelo = new DefaultTableModel(columnas,0);
         
-        for(Usuario u: ProyectoA2026.usuarios){
+        ProyectoA2026.usuarios.sort((u1,u2)->{
+            String n1 = u1.nombre+u1.password+u1.rol;
+            String n2 = u2.nombre + u2.password+u1.rol;;
+            return -n1.compareTo(n2);
+            
+        });
+        
+        
+        
+        ProyectoA2026.usuarios.forEach((u)->{
             Object[] fila = {u.nombre,u.password,u.rol};
             modelo.addRow(fila);
-        }
+        });
+        
+        
+        
         
         jTable1.setModel(modelo);
         
