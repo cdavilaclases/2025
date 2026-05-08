@@ -13,6 +13,8 @@ public class ProyectoB2026 {
     public static ArrayList<Usuario> usuarios = new ArrayList<>();
     public static Usuario usuarioLogin;
     
+    public static ArrayList<Consultorio> consultorios = new ArrayList<>();
+    
     public static void main(String[] args) {
         Login l = new Login();
         l.setVisible(true);
