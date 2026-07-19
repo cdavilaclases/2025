@@ -1,0 +1,18 @@
+digraph G
+{
+    node [shape = circle]
+    node [style = filled]
+    node [fillcolor = "#EEEEE"]
+    node [color = "#EEEEE"]
+    edge [color = "#31CEF0"]
+46->35->23
+35->39->42
+
+
+46->74->49->73
+
+74->80->96
+
+
+
+}
